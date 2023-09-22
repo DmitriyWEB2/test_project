@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+body{
+	overflow-x: hidden;
+	background: url(../images/Background.png) no-repeat center;
+	background-size: cover;
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	width: 1280px;
+	margin: 0 auto;
+}
+.flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/* intro */
+
+#intro{
+	padding-top: 50px;
+	position: relative;
+}
+
+.logo{
+	width: 450px;
+	height: 450px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.logo_img{
+	width: 100%;
+	margin-top: -25px;
+}
+
+.information{
+	width: 60%;
+	position: relative;
+	font-weight: 400;
+	color: #fff;
+}
+
+.title{
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.inf_about{
+	width: 60%;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.inf_more{
+	width: 60%;
+	opacity: 0;
+	height: 0;
+	transition: all .5s linear;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.inf_more.active{
+	opacity: 1;
+	height: auto;
+}
+
+.inf_more .portfolio{
+	color: #fff;
+	display: none;
+}
+
+.inf_more.active .portfolio{
+	display: block;
+}
+
+.more_btn{
+	margin-top: 70px;
+	display: inline-block;
+	border-radius: 150px;
+	padding: 15px 25px;
+	background-color: #FF7400;
+	color: #fff;
+	box-shadow: 5px 5px 10px #A64B00;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	transition: all .5s linear;
+}
+
+.dop_photo{
+	position: absolute;
+	transition: all .5s linear;
+	right: -1000px;
+	
+}
+
+.dop_photo_img{
+	width: 500px;
+}
+
+.dop_photo.active{
+	right: 20px;
+}
